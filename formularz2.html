@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Szablon Bootstrapa</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- twoje style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- brak java scriptu -->
+  <noscript>
+    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
+  </noscript>
+
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <script>
+    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
+    function $buo_f(){
+      var e = document.createElement("script");
+      e.src = "//browser-update.org/update.min.js";
+      document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+  <!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
+<div class="container- fluid">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Ecg.vot.pl</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<!-- clasa collapse to hambureger zwijanie i rozwijanie menu-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Strona główna <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Formularz 1 kolumna</a>
+      </li>
+      <li class="nav-item">
+        <!-- menu rozwijalne ^-->
+        <a class="nav-link" href="#">Formularz 2 kolumna</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Formularz walidacja</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+
+<div class="container">
+
+
+  <form>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Adres email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">Nikomu nie udostępniamy emaila naszy użytkowników.</small>
+  </div>
+</div>
+  <div class="form-group col-md-6">
+    <label for="polePassword1">Hasło</label>
+    <input type="password" class="form-control" id="polePassword1" placeholder="Hasło">
+  </div>
+</div>
+  <div class="col">
+    <label for="polePassword2">Hasło (powtórz)</label>
+    <input type="password" class="form-control" id="polePassword2" placeholder="Hasło(powtórz)">
+  </div>
+  <div class="form-group">
+      <label for="poleImię">Imię</label>
+      <input type="text" class="form-control" id="poleImię" placeholder="Imię">
+</div>
+      <div class="form-group">
+          <label for="poleNazwisko">Nazwisko</label>
+          <input type="text" class="form-control" id="poleNazwisko" placeholder="Nazwisko">
+</div>
+<div class="form-check">
+       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+       <label class="form-check-label" for="exampleCheck1">Przeczytałem regulamin</label>
+     </div>
+
+     <div class="form-row ">
+        <div class="">
+          <label class="" for="inlineFormCustomSelect">Grupa</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Grupa</option>
+            <option value="1">pierwsza</option>
+            <option value="2">druga</option>
+            <option value="3">trzecia</option>
+          </select>
+        </div>
+      </div>
+
+
+     <div class="form-check">
+       <a>Wyślij email z powierdzeniem:</a> <br>
+       <input type="checkbox" class="form-check-input" id="exampleCheck">
+       <label class="form-check-label" for="exampleCheck1">Tak</label><br>
+       <input type="checkbox" class="form-check-input" id="exampleCheck2">
+       <label class="form-check-label" for="exampleCheck1">Nie</label>
+     </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="poleRegulamin">
+    <label class="form-check-label" for="exampleCheck1">Przeczytałem regulamin</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Zapisz</button>
+</form>
+</div>
+
+
+
+
+
+
+
+
+  <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
+  <div class="container">
+
+  </div>
+
+  <!-- jQuery library -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
